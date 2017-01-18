@@ -1,0 +1,23 @@
+{
+  "name": "google",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariovzc/googlePage.git"
+  },
+  "author": "Mario Vizcaino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariovzc/googlePage/issues"
+  },
+  "homepage": "https://github.com/mariovzc/googlePage#readme",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
