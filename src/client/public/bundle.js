@@ -49,8 +49,6 @@
 
 	'use strict';
 	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
 	var _react = __webpack_require__(/*! react */ 1);
 	
 	var _react2 = _interopRequireDefault(_react);
@@ -71,40 +69,215 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } //YOU MUST RUN THIS IN CONSOLE ./node_modules/.bin/webpack -d
+	// ...
+	function Header() {
+	    return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	            'header',
+	            null,
+	            _react2.default.createElement(
+	                'ul',
+	                null,
+	                _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'javascript:void(0);' },
+	                        'Gmail'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'javascript:void(0);' },
+	                        'Images'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'javascript:void(0);' },
+	                        'Menu'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'javascript:void(0);' },
+	                        'Bell'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'javascript:void(0);', className: 'user' },
+	                        'M'
+	                    )
+	                )
+	            )
+	        )
+	    );
+	} //YOU MUST RUN THIS IN CONSOLE ./node_modules/.bin/webpack -d
 	//npm run build RUN WEBPACK IN PRODUCTION
 	// NPM IN DEVELOP npm run dev
 	
-	// ...
-	var App = function (_React$Component) {
-	  _inherits(App, _React$Component);
-	
-	  function App() {
-	    _classCallCheck(this, App);
-	
-	    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
-	  }
-	
-	  _createClass(App, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
+	function Body() {
+	    return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement('headerComponent', null),
-	        _react2.default.createElement('bodyComponent', null),
-	        _react2.default.createElement('footerComponent', null)
-	      );
-	    }
-	  }]);
-	
-	  return App;
-	}(_react2.default.Component);
-	
+	        _react2.default.createElement(
+	            'main',
+	            null,
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'container' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'google-image' },
+	                    _react2.default.createElement('img', { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1000px-Google_2015_logo.svg.png', alt: 'google' })
+	                ),
+	                _react2.default.createElement('input', { type: 'text', name: 'search', value: '' }),
+	                _react2.default.createElement('br', null),
+	                _react2.default.createElement('br', null),
+	                _react2.default.createElement('br', null),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'btn' },
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'javascript:void(0)' },
+	                        'Google Search'
+	                    ),
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'javascript:void(0)' },
+	                        'I\'m feeling lucky'
+	                    )
+	                ),
+	                _react2.default.createElement('br', null),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'last' },
+	                    'Google.com.co ofrecido en: ',
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'javascript:void(0);' },
+	                        'Espa\xF1ol (Latinoam\xE9rica)'
+	                    )
+	                )
+	            )
+	        )
+	    );
+	}
+	function Footer() {
+	    return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	            'footer',
+	            null,
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'left' },
+	                _react2.default.createElement(
+	                    'ul',
+	                    null,
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'javascript:void(0)' },
+	                            'Publicidad'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'javascript:void(0)' },
+	                            'Negocios'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'javascript:void(0)' },
+	                            'Acerca de'
+	                        )
+	                    )
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'right' },
+	                _react2.default.createElement(
+	                    'ul',
+	                    null,
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'javascript:void(0)' },
+	                            'Privacidad'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'javascript:void(0)' },
+	                            'Condiciones'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'javascript:void(0)' },
+	                            'Preferencias'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'javascript:void(0)' },
+	                            'Usar Google.com'
+	                        )
+	                    )
+	                )
+	            )
+	        )
+	    );
+	}
+	function App() {
+	    return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(Header, null),
+	        _react2.default.createElement(Body, null),
+	        _react2.default.createElement(Footer, null)
+	    );
+	}
 	(0, _reactDom.render)(_react2.default.createElement(App, null), document.getElementById('app'));
 
 /***/ },
@@ -22081,100 +22254,71 @@
 
 	"use strict";
 	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
 	var _react = __webpack_require__(/*! react */ 1);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var headerComponent = function (_React$Component) {
-	  _inherits(headerComponent, _React$Component);
-	
-	  function headerComponent() {
-	    _classCallCheck(this, headerComponent);
-	
-	    return _possibleConstructorReturn(this, (headerComponent.__proto__ || Object.getPrototypeOf(headerComponent)).apply(this, arguments));
-	  }
-	
-	  _createClass(headerComponent, [{
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement(
+	function Header() {
+	    return _react2.default.createElement(
 	        "div",
 	        null,
 	        _react2.default.createElement(
-	          "header",
-	          null,
-	          _react2.default.createElement(
-	            "ul",
+	            "header",
 	            null,
 	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement(
-	                "a",
-	                { href: "javascript:void(0);" },
-	                "Gmail"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement(
-	                "a",
-	                { href: "javascript:void(0);" },
-	                "Images"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement(
-	                "a",
-	                { href: "javascript:void(0);" },
-	                "Menu"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement(
-	                "a",
-	                { href: "javascript:void(0);" },
-	                "Bell"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement(
-	                "a",
-	                { href: "javascript:void(0);", "class": "user" },
-	                "M"
-	              )
+	                "ul",
+	                null,
+	                _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    _react2.default.createElement(
+	                        "a",
+	                        { href: "javascript:void(0);" },
+	                        "Gmail"
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    _react2.default.createElement(
+	                        "a",
+	                        { href: "javascript:void(0);" },
+	                        "Images"
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    _react2.default.createElement(
+	                        "a",
+	                        { href: "javascript:void(0);" },
+	                        "Menu"
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    _react2.default.createElement(
+	                        "a",
+	                        { href: "javascript:void(0);" },
+	                        "Bell"
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    _react2.default.createElement(
+	                        "a",
+	                        { href: "javascript:void(0);", className: "user" },
+	                        "M"
+	                    )
+	                )
 	            )
-	          )
 	        )
-	      );
-	    }
-	  }]);
-	
-	  return headerComponent;
-	}(_react2.default.Component);
-	
-	exports.default = headerComponent;
+	    );
+	}
 
 /***/ },
 /* 179 */
