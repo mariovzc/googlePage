@@ -22,44 +22,27 @@ function footer() {
     var div,
         li;
     var ul = Ul();
-
+    var leftWords = ["Publicidad", "Negocios", "Acerca de"];
+    var rightWords = ["Privacidad", "Condiciones", "Preferencias", "Usar Google.com"];
     div = divGenerator('left');
 
-    li = list();
-    li.appendChild(Hyperlink("Publicidad", ""));
-    ul.appendChild(li);
-
-    li = list();
-    li.appendChild(Hyperlink("Negocios", ""));
-    ul.appendChild(li);
-
-    li = list();
-    li.appendChild(Hyperlink("Acerca de", ""));
-    ul.appendChild(li);
-
+    for(i = 0; i < leftWords.length; i++){
+        li = list();
+        li.appendChild(Hyperlink(leftWords[i], ""));
+        ul.appendChild(li);
+    }
     div.appendChild(ul);
     footer.appendChild(div);
     
     ul = Ul();
-
     div = divGenerator('right');
 
-    li = list();
-    li.appendChild(Hyperlink("Privacidad", ""));
-    ul.appendChild(li);
-
-    li = list();
-    li.appendChild(Hyperlink("Condiciones", ""));
-    ul.appendChild(li);
-
-    li = list();
-    li.appendChild(Hyperlink("Preferencias", ""));
-    ul.appendChild(li);
-
-    li = list();
-    li.appendChild(Hyperlink("Usar Google.com", ""));
-    ul.appendChild(li);
-
+    for(i = 0; i < rightWords.length; i++){
+        li = list();
+        li.appendChild(Hyperlink(rightWords[i], ""));
+        ul.appendChild(li);
+    }
+    
     div.appendChild(ul);
     footer.appendChild(div);
 
