@@ -29,12 +29,11 @@ function image(src, alt) {
     return img;
 }
 
-function ul() {
+function Ul() {
     var ul = document.createElement('ul');
     return ul;
 }
-function list(title,cls) { 
+function list() { 
     var li = document.createElement('li');
-    li.appendChild(Hyperlink(title, cls));
     return li;
  }

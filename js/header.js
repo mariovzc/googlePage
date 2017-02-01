@@ -12,12 +12,28 @@
 
 function header() {
     var header = document.createElement('header');
-    ul = ul();
-    ul.appendChild(list("Gmail", ""));
-    ul.appendChild(list("Images", ""));
-    ul.appendChild(list("Menu", ""));
-    ul.appendChild(list("Bell", ""));
-    ul.appendChild(list("M", "user"));
+    var ul = Ul();
+    var li;
+
+    li = list();
+    li.appendChild(Hyperlink("Gmail", ""));
+    ul.appendChild(li);
+
+    li = list();
+    li.appendChild(Hyperlink("Images", ""));
+    ul.appendChild(li);
+
+    li = list();
+    li.appendChild(Hyperlink("Menu", ""));
+    ul.appendChild(li);
+
+    li = list();
+    li.appendChild(Hyperlink("Bell", ""));
+    ul.appendChild(li);
+
+    li = list();
+    li.appendChild(Hyperlink("M", "user"));
+    ul.appendChild(li);
 
     header.appendChild(ul);
     return header;
