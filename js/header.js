@@ -29,13 +29,3 @@ function list(title,cls) {
     li.appendChild(Hyperlink(title, cls));
     return li;
  }
-
-function Hyperlink(title, cls) {
-    var a = document.createElement('a');
-    var linkText = document.createTextNode(title);
-    a.appendChild(linkText);
-    a.title = title;
-    a.href = "javascript:void(0);";
-    if(cls !== ""){a.classList.add('user')}
-    return a;
-}
