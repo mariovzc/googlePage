@@ -30,10 +30,8 @@ function image(src, alt) {
 }
 
 function Ul() {
-    var ul = document.createElement('ul');
-    return ul;
+    return document.createElement('ul');
 }
 function list() { 
-    var li = document.createElement('li');
-    return li;
+    return document.createElement('li');
  }
