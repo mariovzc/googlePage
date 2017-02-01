@@ -17,3 +17,51 @@
     </div>
 </footer>
  */
+function footer() { 
+    var footer = document.createElement('footer');;
+    var div,
+        li;
+    var ul = Ul();
+
+    div = divGenerator('left');
+
+    li = list();
+    li.appendChild(Hyperlink("Publicidad", ""));
+    ul.appendChild(li);
+
+    li = list();
+    li.appendChild(Hyperlink("Negocios", ""));
+    ul.appendChild(li);
+
+    li = list();
+    li.appendChild(Hyperlink("Acerca de", ""));
+    ul.appendChild(li);
+
+    div.appendChild(ul);
+    footer.appendChild(div);
+    
+    ul = Ul();
+
+    div = divGenerator('right');
+
+    li = list();
+    li.appendChild(Hyperlink("Privacidad", ""));
+    ul.appendChild(li);
+
+    li = list();
+    li.appendChild(Hyperlink("Condiciones", ""));
+    ul.appendChild(li);
+
+    li = list();
+    li.appendChild(Hyperlink("Preferencias", ""));
+    ul.appendChild(li);
+
+    li = list();
+    li.appendChild(Hyperlink("Usar Google.com", ""));
+    ul.appendChild(li);
+
+    div.appendChild(ul);
+    footer.appendChild(div);
+
+    return footer;
+ }
