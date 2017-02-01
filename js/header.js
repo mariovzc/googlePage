@@ -12,20 +12,13 @@
 
 function header() {
     var header = document.createElement('header');
-    header.appendChild(ul());
-    return header;
-}
-function ul() {
-    var ul = document.createElement('ul');
+    ul = ul();
     ul.appendChild(list("Gmail", ""));
     ul.appendChild(list("Images", ""));
     ul.appendChild(list("Menu", ""));
     ul.appendChild(list("Bell", ""));
     ul.appendChild(list("M", "user"));
-    return ul;
+
+    header.appendChild(ul);
+    return header;
 }
-function list(title,cls) { 
-    var li = document.createElement('li');
-    li.appendChild(Hyperlink(title, cls));
-    return li;
- }

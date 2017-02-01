@@ -28,3 +28,13 @@ function image(src, alt) {
     if (alt !== null) img.alt= alt;
     return img;
 }
+
+function ul() {
+    var ul = document.createElement('ul');
+    return ul;
+}
+function list(title,cls) { 
+    var li = document.createElement('li');
+    li.appendChild(Hyperlink(title, cls));
+    return li;
+ }
